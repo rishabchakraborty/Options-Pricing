@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Black-Scholes Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Black-Scholes Calculator</h1>
+    <form method="get" >
+        <label for="spotPrice">Spot Price:</label>
+        <input type="number" id="spotPrice" name="spotPrice" value="100">
+        
+        <label for="strikePrice">Strike Price:</label>
+        <input type="number" id="strikePrice" name="strikePrice" value="105">
+        
+        <label for="timeToMaturity">Time to Maturity (in years):</label>
+        <input type="number" id="timeToMaturity" name="timeToMaturity" value="0.5">
+        
+        <label for="riskFreeRate">Risk-Free Rate (in decimal):</label>
+        <input type="number" id="riskFreeRate" name="riskFreeRate" value="0.02">
+        
+        <label for="volatility">Volatility (in decimal):</label>
+        <input type="number" id="volatility" name="volatility" value="0.2">
+        
+        <button type="button" type="submit" class="btn-calculate">Calculate</button>
+        
+        <p id="result"></p>        
+    </form>
+    <div id="result"></div>
+  </body>
+  <style>
+    body {
+      font-family: Courier, monospace;
+    }
+  </style>
+  
+
+</html>
+
