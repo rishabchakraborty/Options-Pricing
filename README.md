@@ -6,4 +6,4 @@ git clone https://github.com/rishabchakraborty/Options-Pricing.git
 cd Options-Pricing 
 flask run app.py
 ```
-Price your options using the Binomial Tree Method!
+Price your option contracts using the Binomial Tree Method! 
